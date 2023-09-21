@@ -1,69 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    background-color: #001f39;
-    font-family: 'Poppins', sans-serif;
-    color: #fff;
+  background-color: #001f39;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
 }
+
 .container {
-    width: 80%;
-    margin: 150px auto;
+  width: 80%;
+  margin: 150px auto;
 }
-h1, h2 {
-    font-weight: 500;
+h1,
+h2 {
+  font-weight: 500;
 }
 h1 {
-    color: #007d4d;
+  color: #007d4d;
 }
 
 .input {
-    margin: 25px 0;
-    position: relative;
-        width: 80%;
+  margin: 25px 0;
+  position: relative;
+  width: 80%;
+}
+input::selection {
+  background-color: transparent;
+  color: inherit;
 }
 input#show {
-    height: 30px;
-    width: 100%;
-    padding: 30px 15px;
-    font-size: 18px;
-    font-family: 'Poppins';
-    border-radius: 6px;
-    border: none;
-    outline: none;
+  height: 30px;
+  width: 100%;
+  padding: 30px 15px;
+  font-size: 18px;
+  font-family: "Poppins";
+  border-radius: 6px;
+  border: none;
+  outline: none;
 }
 .input img {
-    width: 22px;
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
- }
- button {
-    color: white;
-    font-family: inherit;
-    background-color: #007d4d;
-    border: navajowhite;
-    border-radius: 6px;
-    font-size: 18px;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
+  width: 22px;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+button {
+  color: white;
+  font-family: inherit;
+  background-color: #007d4d;
+  border: navajowhite;
+  border-radius: 6px;
+  font-size: 18px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
 }
 button img {
-    width: 30px;
- }
+  width: 30px;
+}
 
-
- p {
+p {
   position: absolute;
   right: -62px;
   top: -32px;
@@ -71,12 +76,12 @@ button img {
   background-color: #555;
   padding: 6px 15px;
   border-radius: 6px;
-  transition: all .2s ease;
+  transition: all 0.2s ease;
   opacity: 0;
   width: 180px;
-    text-align: center;
+  text-align: center;
 }
-p.red { 
+p.red {
   background-color: #b329298c;
 }
 p.red::before {
@@ -97,7 +102,6 @@ p::before {
   left: 50%;
   transform: translateX(-50%);
 }
-
 
 .input img:hover + p {
   opacity: 1;
