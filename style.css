@@ -70,15 +70,15 @@ button img {
 
 p {
   position: absolute;
-  right: -62px;
-  top: -32px;
+  right: -88px;
+  top: -46px;
   font-size: 13px;
   background-color: #555;
   padding: 6px 15px;
   border-radius: 6px;
   transition: all 0.2s ease;
   opacity: 0;
-  width: 180px;
+  width: 230px;
   text-align: center;
 }
 p.red {
@@ -105,4 +105,27 @@ p::before {
 
 .input img:hover + p {
   opacity: 1;
+}
+.lenght {
+  display: flex;
+  gap: 6px;
+  flex-direction: column;
+  width: 200px;
+  margin: 20px 0px;
+}
+input#number-length {
+  width: 60px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 10px;
+  font-weight: bolder;
+  box-shadow: 0 0 3px 0 #007d4d;
+}
+.inputs {
+  display: flex;
+  gap: 10px;
 }

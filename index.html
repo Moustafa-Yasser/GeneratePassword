@@ -10,7 +10,15 @@
     <div class="container">
     <h2>Generate a</h2><h1>Random Password</h1>
 <div class="input"><input type="text" id="show" readonly placeholder="Password"><img src="images/copy.png" alt="copy"><p>Copy to clipboard</p></div>
+<div class="lenght">
+    <label for="range-length">Lenght Number</label>
+    <div class="inputs">
+        <input type="range" id="range-length" min="4" max="25" value="8">
+    <input type="number" id="number-length" value="8" min="4" max="25">
+    </div>
+</div>
 <button><img src="images/generate.png" alt="generate">Generate Password</button>
+
     </div>
     <script src="main.js"></script>
 </body>
